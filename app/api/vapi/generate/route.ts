@@ -3,6 +3,9 @@ import { google } from "@ai-sdk/google";
 import { getRandomInterviewCoverImg } from "@/lib/utils";
 import { adminDB } from "@/firebase/admin";
 
+// Force this route to be dynamic (not pre-rendered at build time)
+export const dynamic = "force-dynamic";
+
 // Health check route handler
 // Responds with a simple success message when a GET request is made
 export async function GET() {

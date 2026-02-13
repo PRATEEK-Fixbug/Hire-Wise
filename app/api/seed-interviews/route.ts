@@ -1,6 +1,9 @@
 import { adminDB } from "@/firebase/admin";
 import { NextResponse } from "next/server";
 
+// Force this route to be dynamic (not pre-rendered at build time)
+export const dynamic = "force-dynamic";
+
 // Sample interview data
 const sampleInterviews = [
   {
